@@ -1,0 +1,18 @@
+﻿<Window x:Class="ScreenSharableWebView2.MainWindow"
+		x:Name="MainWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScreenSharableWebView2"
+		xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        mc:Ignorable="d"
+        Title="ScreenSharableWebView2" ResizeMode="NoResize" Height="490" Width="640" WindowStyle="None" Background="#FFFFFF">
+	<Grid x:Name="MainGrid" Height="490" Width="640" Background="#00000000" Margin="0,0,0,0">
+		<Grid x:Name="SubGrid" Margin="0,5,0,0">
+			<wv2:WebView2 x:Name="MainWebBrowser" VerticalAlignment="Stretch" Source="https://www.google.com/" 
+	        DefaultBackgroundColor="White" Grid.Row="0"
+	        NavigationCompleted="MainWebBrowser_NavigationCompleted" AllowExternalDrop="False" />
+		</Grid>
+	</Grid>
+</Window>
