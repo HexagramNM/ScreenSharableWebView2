@@ -1,5 +1,5 @@
 .vs
 bin
 obj
-LocalNAudio
+NAudioLocal
 *.csproj.user
